@@ -2,7 +2,6 @@
 
 import os
 import sys
-import codecs
 import csv
 
 
@@ -15,7 +14,7 @@ def test_path(path):
 def get_record(path):
     test_path(path)
 
-    with codecs.open(path, "r", encoding="utf-8")as file:
+    with open(path, "r")as file:
         result = []
         obj_csv = csv.reader(file)
 
@@ -26,6 +25,6 @@ def get_record(path):
 
 
 def add_record(path, record):
-    with codecs.open(path, "at", encoding="utf-8")as file:
+    with open(path, "at")as file:
         obj_csv = csv.writer(file)
         obj_csv.writerow(record)
