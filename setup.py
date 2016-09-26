@@ -9,22 +9,18 @@ except Exception:
     long_description = ""
 
 setup(
-    name="py-ps-config",
-    version="1.1",
-    description="Management utilities for config files.",
+    name="py-ps-csv",
+    version="1.0",
+    description="Utilities for csv files.",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
-    url="https://github.com/JhonnyBravo/py-ps-config.git",
+    url="https://github.com/JhonnyBravo/py-ps-csv.git",
     packages=find_packages(),
     long_description=long_description,
     entry_points={
         "console_scripts": [
-            "get_config_option_list=ps_config.bin.get_config_option_list:main",
-            "get_config_option_value=ps_config.bin.get_config_option_value:main",
-            "get_config_section_list=ps_config.bin.get_config_section_list:main",
-            "remove_config_option=ps_config.bin.remove_config_option:main",
-            "remove_config_section=ps_config.bin.remove_config_section:main",
-            "set_config_option=ps_config.bin.set_config_option:main"
+            "add_csv_record=ps_csv.bin.add_csv_record:main",
+            "get_csv_record=ps_csv.bin.get_csv_record:main"
         ]
     },
     classifiers=[
