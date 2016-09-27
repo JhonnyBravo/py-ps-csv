@@ -10,7 +10,7 @@ except Exception:
 
 setup(
     name="py-ps-csv",
-    version="1.0",
+    version="1.1",
     description="Utilities for csv files.",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
