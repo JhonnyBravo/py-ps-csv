@@ -19,8 +19,8 @@ def main():
     result = lib.get_record(args.path)
 
     if len(result) > 0:
-        for i in result:
-            print(i)
+        for record in result:
+            print(" ".join(record))
 
 if __name__ == "__main__":
     main()
